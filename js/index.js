@@ -59,6 +59,11 @@ window.addEventListener('resize', () => {
   img.style.display = 'none';
 });
 
+img.addEventListener('dblclick', event => {
+  console.log(event);
+  event.target.style.visibility = 'hidden';
+});
+
 window.addEventListener('keypress', () => {
   alert('We believe your hand is resting on your keyboard');
 });
