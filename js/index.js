@@ -49,3 +49,12 @@ buttons.forEach(item => {
     e.target.style.color = 'red';
   })
 });
+
+window.addEventListener('scroll', () => {
+  navClick.style.backgroundColor = 'gainsboro';
+});
+
+let img = document.querySelector('.home .intro img');
+window.addEventListener('resize', () => {
+  img.style.display = 'none';
+});
