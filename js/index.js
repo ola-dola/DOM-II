@@ -58,3 +58,12 @@ let img = document.querySelector('.home .intro img');
 window.addEventListener('resize', () => {
   img.style.display = 'none';
 });
+
+window.addEventListener('keypress', () => {
+  alert('We believe your hand is resting on your keyboard');
+});
+
+window.addEventListener('copy', (event) => {
+  event.preventDefault();
+  alert('We have a strong policy against content thieves.');
+});
